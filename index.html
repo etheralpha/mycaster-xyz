@@ -272,7 +272,10 @@
       <!-- <div class="mt-4"></div> -->
       <p id="reset" class="text-muted text-center" onclick="reset();">Reset</p>
       <p id="resetComplete" class="d-none fs-5 text-center">✅</p>
-      <p class="text-center mt-auto mb-sm-0 pt-4">Made by <a href="https://etheralpha.org" target="_blank">Ether Alpha</a> with 💜</p>
+      <div class="mt-auto">
+        <p class="text-center mb-1 pt-4">Made by <a href="https://etheralpha.org" target="_blank">Ether Alpha</a> with 💜</p>
+        <p class="text-center mb-sm-0"><a href="https://etheralpha.org" target="_blank">Follow me 🖖</a></p>
+      </div>
     </main>
     <script type="text/javascript">
       window.addEventListener("DOMContentLoaded", function() {
@@ -314,7 +317,7 @@
         localStorage.setItem("baseUrl", baseUrl);
         let params = getQueryParameters();
         let url = baseUrl + params.p;
-        window.location.href(url);
+        window.location.href = url;
         // window.location.replace(url);
       }
       // gets the url parameters
