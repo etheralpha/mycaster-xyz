@@ -314,8 +314,8 @@
         localStorage.setItem("baseUrl", baseUrl);
         let params = getQueryParameters();
         let url = baseUrl + params.p;
-        // window.location.href(url);
-        window.location.replace(url);
+        window.location.href(url);
+        // window.location.replace(url);
       }
       // gets the url parameters
       function getQueryParameters() {
